@@ -12,31 +12,31 @@ const Events = () => {
       id: 'community',
       label: 'Community Service',
       description: 'Service projects that benefit the local community',
-      image: 'https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=800&q=80'
+      image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755454317/photo-1521791055366-0d553872125f_kyryoy.avif'
     },
     {
       id: 'club',
       label: 'Club Service',
       description: 'Activities that strengthen our club and its members',
-      image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80'
+      image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755454347/photo-1517048676732-d65bc937f952_ildrq7.avif'
     },
     {
       id: 'professional',
       label: 'Professional Service',
       description: 'Initiatives for professional development and networking',
-      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80'
+      image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755454416/photo-1522202176988-66273c2fd55f_bp63jk.avif'
     },
     {
       id: 'international',
       label: 'International Service',
       description: 'Projects with global impact and international collaboration',
-      image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80'
+      image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755454436/photo-1500382017468-9049fed747ef_soka7e.avif'
     },
     {
       id: 'district',
       label: 'District Priority Projects',
       description: 'Key initiatives supported by our district',
-      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80'
+      image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755454458/photo-1454165804606-c3d57bc86b40_tdndca.avif'
     }
   ];
 
