@@ -17,6 +17,7 @@ const Team = () => {
   const [showTreasurerDetails, setShowTreasurerDetails] = useState(false);
   const [showSecretaryDetails, setShowSecretaryDetails] = useState(false);
   const [showWebchairDetails, setShowWebchairDetails] = useState(false);
+  const [showPrchairDetails, setShowPrchairDetails] = useState(false);
   const [showCommunityDetails, setShowCommunityDetails] = useState(false);
   const [showSanjayDetails, setShowSanjayDetails] = useState(false);
   const [showPrajjeeithDetails, setShowPrajjeeithDetails] = useState(false);
@@ -30,7 +31,6 @@ const Team = () => {
   const [showSivahariniDetails, setShowSivahariniDetails] = useState(false);
   const [showNarenDetails, setShowNarenDetails] = useState(false);
   const [showDharaneeshDetails, setShowDharaneeshDetails] = useState(false);
-  const [showMirthulaDetails, setShowMirthulaDetails] = useState(false);
   const [showPriyankaDetails, setShowPriyankaDetails] = useState(false);
   const [showSrinithiDetails, setShowSrinithiDetails] = useState(false);
   const [showRithanyaDetails, setShowRithanyaDetails] = useState(false);
@@ -50,60 +50,54 @@ const Team = () => {
     },
     {
       id: 2,
-      name: 'Rtr. Drashan Sastikesh',
-      image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755411662/Darshan_jnxkak.jpg',
-      position: 'PUBLIC IMAGE CHAIR'
-    },
-    {
-      id: 3,
       name: 'Rtr. Hari Priya G',
       image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755411665/Hari_PriyaG_f7xxu4.jpg',
       position: 'LEARNING FACILITATOR - CHAIR '
     },
     {
-      id: 4,
+      id: 3,
       name: 'Rtr. Jairam',
       image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755411664/Jairam_wiwxrr.jpg',
       position: 'MEMBERSHIP CHAIR '
     },
     {
-      id: 5,
+      id: 4,
       name: 'Rtr. Lohit',
       image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755411664/lohit_nnfyiq.jpg',
       position: 'PHOTOGRAPHY CHAIR '
     },
     {
-      id: 6,
+      id: 5,
       name: 'Rtr. Niswetha',
       image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755411664/niswetha_yvg0d0.jpg',
       position: 'CHAIR SOCIAL MEDIA'
     },
     {
-      id: 7,
+      id: 6,
       name: 'Rtr. Prateesh',
       image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755411666/prateesh_vj5chv.jpg',
       position: 'ALL OPERATION CHAIR '
     },
     {
-      id: 8,
+      id: 7,
       name: 'Rtr. Sakthi Ram',
       image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755411666/srisakti_vtnylf.jpg',
       position: ' IMMEDIATE PAST PRESIDENT  '
     },
     {
-      id: 9,
+      id: 8,
       name: 'Rtr. Surya Prakash',
       image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755411667/Surya_Prakash_joopwi.jpg',
       position: 'SEARGANT AT ARMS'
     },
     {
-      id: 10,
+      id: 9,
       name: 'Rtr. Vallamai',
       image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755411667/vallamai_leog4m.jpg',
       position: 'HOSPITALITY '
     },
     {
-      id: 11,
+      id: 10,
       name: 'Rtr. Vishnu Prasad',
       image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755411662/vishnu_prasad_x8dh8n.jpg',
       position: 'MEMBERSHIP DIRECTOR '
@@ -814,126 +808,126 @@ const Team = () => {
                 </div>
               </div>
             </AnimationWrapper>
-            {/* Rtr. Pratheesh – Special Aid to the President */}  
-<AnimationWrapper delay={500}>
-  <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02]">
-    <div className="p-8">
-      
-      {/* Team Member Photo */}
-      <div className="text-center mb-6">
-        <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg mx-auto transition-transform duration-300 hover:scale-105">
-          <img 
-            src="https://res.cloudinary.com/drmwtmeg3/image/upload/v1755413221/prateesh_xfstxd.jpg" 
-            alt="Rtr. Pratheesh – Special Aid to the President"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-      
-      {/* Team Member Details */}
-      <div className="text-center mb-6">
-        <h3 className="text-2xl font-bold text-gray-900 mb-2">
-          Rtr. Pratheesh
-        </h3>
-        <div className="flex items-center justify-center gap-2 mb-4">
-          <span className="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-            Special Aid to the President
-          </span>
-        </div>
-      </div>
-      
-      {/* Description with Read More */}
-      <div className="prose prose-gray max-w-none">
-        <p className="text-gray-700 leading-relaxed mb-4 text-sm">
-          We are thrilled to welcome <span className="font-semibold">Rtr. Pratheesh</span> 
-          to our leadership team in his new role as 
-          <span className="font-semibold"> Special Aid to the President</span>. In this vital 
-          position, he will serve as a key advisor and collaborator, working directly with the 
-          President to ensure the seamless execution of our club's goals.
-        </p>
-        
-        {showPratheeshDetails && (
-          <>
-            <div className="mb-4">
-              <h5 className="font-semibold text-gray-900 mb-2 text-sm">Dedication & Proactive Spirit</h5>
-              <p className="text-gray-700 text-sm mb-3">
-                His journey in Rotaract has been defined by his dedication and proactive spirit. 
-                He brings a fresh perspective and a strategic mind, which will be instrumental in 
-                supporting the various avenues of service and driving our projects forward.
-              </p>
-            </div>
-            
-            <div className="mb-4">
-              <h5 className="font-semibold text-gray-900 mb-2 text-sm">Key Responsibilities</h5>
-              <p className="text-gray-700 text-sm mb-3">
-                His responsibilities will include coordinating with different committees, 
-                providing support for major initiatives, and helping to maintain the high 
-                standards of our club’s work.
-              </p>
-            </div>
+            {/* Rtr. Pratheesh – Special Aid to the President */}
+            <AnimationWrapper delay={500}>
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02]">
+                <div className="p-8">
 
-            <div className="mb-4">
-              <h5 className="font-semibold text-gray-900 mb-2 text-sm">Inspiring Teamwork</h5>
-              <p className="text-gray-700 text-sm mb-3">
-                Beyond his official duties, he is known for his ability to inspire teamwork 
-                and foster a positive, collaborative environment among members.
-              </p>
-            </div>
+                  {/* Team Member Photo */}
+                  <div className="text-center mb-6">
+                    <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg mx-auto transition-transform duration-300 hover:scale-105">
+                      <img
+                        src="https://res.cloudinary.com/drmwtmeg3/image/upload/v1755413221/prateesh_xfstxd.jpg"
+                        alt="Rtr. Pratheesh – Special Aid to the President"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
 
-            <div className="mb-4">
-              <h5 className="font-semibold text-gray-900 mb-2 text-sm">Commitment to Service</h5>
-              <p className="text-gray-700 text-sm">
-                His commitment to the Rotaract motto 
-                <span className="italic"> “Service Above Self”</span> is evident in everything he does. 
-                We are confident that his leadership and passion will be a tremendous asset to 
-                our club as we strive to make a lasting impact.
-              </p>
-            </div>
-          </>
-        )}
-        
-        <div className="text-center mt-4">
-          <Button 
-            onClick={() => setShowPratheeshDetails(!showPratheeshDetails)}
-            variant="outline"
-            size="sm"
-            className="text-primary border-primary hover:bg-primary hover:text-white transition-colors"
-          >
-            {showPratheeshDetails ? 'Read Less' : 'Read More'}
-          </Button>
-        </div>
-      </div>
-      
-      {/* Key Highlights */}
-      <div className="mt-6 pt-4 border-t border-gray-200">
-        <h4 className="text-sm font-semibold text-gray-900 mb-3">Key Highlights</h4>
-        <div className="space-y-2">
-          <div className="flex items-center gap-2">
-            <span className="text-blue-600 text-xs">🤝</span>
-            <span className="text-xs text-gray-700">Advisor & Collaborator with the President</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-green-600 text-xs">🚀</span>
-            <span className="text-xs text-gray-700">Proactive & Strategic Mindset</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-purple-600 text-xs">📌</span>
-            <span className="text-xs text-gray-700">Coordinates with Committees & Major Initiatives</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-yellow-600 text-xs">🌟</span>
-            <span className="text-xs text-gray-700">Fosters Teamwork & Collaboration</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-pink-600 text-xs">✨</span>
-            <span className="text-xs text-gray-700">Embodies “Service Above Self”</span>
-          </div>
-        </div>
-      </div>
+                  {/* Team Member Details */}
+                  <div className="text-center mb-6">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                      Rtr. Pratheesh
+                    </h3>
+                    <div className="flex items-center justify-center gap-2 mb-4">
+                      <span className="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                        Special Aid to the President
+                      </span>
+                    </div>
+                  </div>
 
-    </div>
-  </div>
-</AnimationWrapper>
+                  {/* Description with Read More */}
+                  <div className="prose prose-gray max-w-none">
+                    <p className="text-gray-700 leading-relaxed mb-4 text-sm">
+                      We are thrilled to welcome <span className="font-semibold">Rtr. Pratheesh</span>
+                      to our leadership team in his new role as
+                      <span className="font-semibold"> Special Aid to the President</span>. In this vital
+                      position, he will serve as a key advisor and collaborator, working directly with the
+                      President to ensure the seamless execution of our club's goals.
+                    </p>
+
+                    {showPratheeshDetails && (
+                      <>
+                        <div className="mb-4">
+                          <h5 className="font-semibold text-gray-900 mb-2 text-sm">Dedication & Proactive Spirit</h5>
+                          <p className="text-gray-700 text-sm mb-3">
+                            His journey in Rotaract has been defined by his dedication and proactive spirit.
+                            He brings a fresh perspective and a strategic mind, which will be instrumental in
+                            supporting the various avenues of service and driving our projects forward.
+                          </p>
+                        </div>
+
+                        <div className="mb-4">
+                          <h5 className="font-semibold text-gray-900 mb-2 text-sm">Key Responsibilities</h5>
+                          <p className="text-gray-700 text-sm mb-3">
+                            His responsibilities will include coordinating with different committees,
+                            providing support for major initiatives, and helping to maintain the high
+                            standards of our club’s work.
+                          </p>
+                        </div>
+
+                        <div className="mb-4">
+                          <h5 className="font-semibold text-gray-900 mb-2 text-sm">Inspiring Teamwork</h5>
+                          <p className="text-gray-700 text-sm mb-3">
+                            Beyond his official duties, he is known for his ability to inspire teamwork
+                            and foster a positive, collaborative environment among members.
+                          </p>
+                        </div>
+
+                        <div className="mb-4">
+                          <h5 className="font-semibold text-gray-900 mb-2 text-sm">Commitment to Service</h5>
+                          <p className="text-gray-700 text-sm">
+                            His commitment to the Rotaract motto
+                            <span className="italic"> “Service Above Self”</span> is evident in everything he does.
+                            We are confident that his leadership and passion will be a tremendous asset to
+                            our club as we strive to make a lasting impact.
+                          </p>
+                        </div>
+                      </>
+                    )}
+
+                    <div className="text-center mt-4">
+                      <Button
+                        onClick={() => setShowPratheeshDetails(!showPratheeshDetails)}
+                        variant="outline"
+                        size="sm"
+                        className="text-primary border-primary hover:bg-primary hover:text-white transition-colors"
+                      >
+                        {showPratheeshDetails ? 'Read Less' : 'Read More'}
+                      </Button>
+                    </div>
+                  </div>
+
+                  {/* Key Highlights */}
+                  <div className="mt-6 pt-4 border-t border-gray-200">
+                    <h4 className="text-sm font-semibold text-gray-900 mb-3">Key Highlights</h4>
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2">
+                        <span className="text-blue-600 text-xs">🤝</span>
+                        <span className="text-xs text-gray-700">Advisor & Collaborator with the President</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-green-600 text-xs">🚀</span>
+                        <span className="text-xs text-gray-700">Proactive & Strategic Mindset</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-purple-600 text-xs">📌</span>
+                        <span className="text-xs text-gray-700">Coordinates with Committees & Major Initiatives</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-yellow-600 text-xs">🌟</span>
+                        <span className="text-xs text-gray-700">Fosters Teamwork & Collaboration</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-pink-600 text-xs">✨</span>
+                        <span className="text-xs text-gray-700">Embodies “Service Above Self”</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </AnimationWrapper>
 
             {/* Rtr. Netra - Joint Secretary */}
             <AnimationWrapper delay={400}>
@@ -3453,6 +3447,125 @@ const Team = () => {
                       <div className="flex items-center gap-2">
                         <span className="text-pink-600 text-xs">✨</span>
                         <span className="text-[10px] sm:text-xs text-gray-700">Vision – Strengthen Club’s Digital Identity</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </AnimationWrapper>
+            {/* Rtr. Dharsan Sastikesh S.P – Public Relations Chair */}
+            <AnimationWrapper delay={500}>
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02]">
+                <div className="p-6 sm:p-8">
+
+                  {/* Team Member Photo */}
+                  <div className="text-center mb-6">
+                    <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden border-4 border-white shadow-lg mx-auto transition-transform duration-300 hover:scale-105">
+                      <img
+                        src="https://res.cloudinary.com/drmwtmeg3/image/upload/v1755411662/Darshan_jnxkak.jpg"
+                        alt="Rtr. Dharsan Sastikesh S.P – Public Relations Chair"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Team Member Details */}
+                  <div className="text-center mb-6">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                      Rtr. Dharsan Sastikesh S.P
+                    </h3>
+                    <div className="flex flex-wrap items-center justify-center gap-2 mb-4">
+                      <span className="bg-primary text-white px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap">
+                        Public Relations Chair
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Description with Read More */}
+                  <div className="prose prose-gray max-w-none">
+                    <p className="text-gray-700 leading-relaxed mb-4 text-sm">
+                      As the <span className="font-semibold">Public Relations (PR) Chair</span>, I play a
+                      vital role in enhancing the image and visibility of the Rotaract Club of KPRCAS.
+                      My focus is on <span className="font-semibold">Promoting Club Image (PCI)</span>
+                      through effective communication, social media presence, and creative outreach.
+                    </p>
+
+                    {showPrchairDetails && (
+                      <>
+                        <div className="mb-4">
+                          <h5 className="font-semibold text-gray-900 mb-2 text-sm">Promote Club Image</h5>
+                          <p className="text-gray-700 text-sm mb-3">
+                            I ensure a consistent and professional outlook across all platforms,
+                            aligning our branding with Rotaract values and maintaining visibility.
+                          </p>
+                        </div>
+
+                        <div className="mb-4">
+                          <h5 className="font-semibold text-gray-900 mb-2 text-sm">Social Media Management</h5>
+                          <p className="text-gray-700 text-sm mb-3">
+                            From engaging posts to reels, I make sure our social media reflects
+                            our vibrant projects and inspires wider community engagement.
+                          </p>
+                        </div>
+
+                        <div className="mb-4">
+                          <h5 className="font-semibold text-gray-900 mb-2 text-sm">Event Promotion & Communication</h5>
+                          <p className="text-gray-700 text-sm mb-3">
+                            I handle event publicity through creative campaigns and maintain
+                            effective internal communication (IC) with members and external
+                            communication (EC) with partners and media.
+                          </p>
+                        </div>
+
+                        <div className="mb-4">
+                          <h5 className="font-semibold text-gray-900 mb-2 text-sm">Documentation & Reporting</h5>
+                          <p className="text-gray-700 text-sm">
+                            I capture photographs, videos, and maintain a <span className="font-semibold">Photo & Video Archive (PVA)</span>.
+                            I also contribute to Monthly Newsletters (MN) and press releases.
+                          </p>
+                          <p className="italic text-primary text-sm mt-2">
+                            ✨ “Visibility creates impact—and impact builds legacy.”
+                          </p>
+                        </div>
+                      </>
+                    )}
+
+                    <div className="text-center mt-4">
+                      <Button
+                        onClick={() => setShowPrchairDetails(!showPrchairDetails)}
+                        variant="outline"
+                        size="sm"
+                        className="text-primary border-primary hover:bg-primary hover:text-white transition-colors"
+                      >
+                        {showPrchairDetails ? 'Read Less' : 'Read More'}
+                      </Button>
+                    </div>
+                  </div>
+
+                  {/* Key Highlights */}
+                  <div className="mt-6 pt-4 border-t border-gray-200">
+                    <h4 className="text-sm font-semibold text-gray-900 mb-3">Key Highlights</h4>
+                    <div className="space-y-1 sm:space-y-2">
+                      <div className="flex items-center gap-2">
+                        <span className="text-blue-600 text-xs">📢</span>
+                        <span className="text-[10px] sm:text-xs text-gray-700">Promotes Club Image (PCI)</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-green-600 text-xs">📱</span>
+                        <span className="text-[10px] sm:text-xs text-gray-700">Manages Social Media (SMM)</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-purple-600 text-xs">🎉</span>
+                        <span className="text-[10px] sm:text-xs text-gray-700">Creative Event Promotion (EP)</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-yellow-600 text-xs">📝</span>
+                        <span className="text-[10px] sm:text-xs text-gray-700">Documentation & Reporting (DR)</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-pink-600 text-xs">📸</span>
+                        <span className="text-[10px] sm:text-xs text-gray-700">Maintains Photo & Video Archive (PVA)</span>
                       </div>
                     </div>
                   </div>
