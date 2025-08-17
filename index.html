@@ -6,21 +6,41 @@
     <title>Rotaract Club of KPRCAS</title>
     <meta name="description" content="Official website of Rotaract Club of KPRCAS - Empowering youth through service and leadership" />
     <meta name="author" content="Rotaract Club of KPRCAS" />
+    
+    <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <meta property="og:title" content="kprcas-rotaract-animated-showcase" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:url" content="https://rotaractkprcas.vercel.app/" />
+    <meta property="og:title" content="Rotaract Club of KPRCAS" />
+    <meta property="og:description" content="Empowering youth through service and leadership" />
+    <meta property="og:image" content="/opengraph-image.png" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://rotaractkprcas.vercel.app/" />
+    <meta property="twitter:title" content="Rotaract Club of KPRCAS" />
+    <meta property="twitter:description" content="Empowering youth through service and leadership" />
+    <meta property="twitter:image" content="/opengraph-image.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" as="style" href="/src/index.css" />
+    <link rel="stylesheet" href="/src/index.css" />
   </head>
 
   <body>
+    <noscript>
+      <div style="text-align: center; padding: 2rem; font-family: Poppins, sans-serif;">
+        <h1>JavaScript is required to run this application</h1>
+        <p>Please enable JavaScript to continue.</p>
+      </div>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
