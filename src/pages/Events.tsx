@@ -161,7 +161,7 @@ const Events = () => {
                 description: 'Mattaipandhu 2.0 is an initiative to build a community.'
               },
               {
-                title: 'வளமான கல்விக்காக-(Donation of Secondary books & guides',
+                title: 'வளமான கல்விக்காக-(Donation of Secondary books & guides)',
                 date: '2025-08-30',
                 time:'03:00 PM',
                 location:'Arasur Govt School',
