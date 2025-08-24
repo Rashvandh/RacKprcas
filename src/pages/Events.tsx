@@ -132,11 +132,11 @@ const Events = () => {
                 description: 'அன்பின் மறு உருவம் is an initiative to help elderly people.'
               },
               {
-                title: 'Cultural Exchange',
-                date: '2025-08-26',
-                platform: 'Gmeet',
-                image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755885523/WhatsApp_Image_2025-08-22_at_20.54.05_00e90d55_o1ntjd.jpg',
-                description: 'Cultural Exchange - A day of cultural exchange and learning.'
+                title: 'Mattaipandhu 2.0',
+                date: '2025-08-28',
+                location:'Karumathampatti',
+                image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1756053140/WhatsApp_Image_2025-08-24_at_21.45.07_224b18e3_fllgx6.jpg',
+                description: 'Mattaipandhu 2.0 is an initiative to build a community.'
               },
               {
                 title: 'வெறும் பெண் இல்லை',
@@ -144,6 +144,29 @@ const Events = () => {
                 location:'Arasur Govt School',
                 image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755885523/WhatsApp_Image_2025-08-22_at_20.54.04_c5c998e3_o6x8vz.jpg',
                 description: 'வெறும் பெண் இல்லை its an self defence learning session for girls.'
+              },
+              {
+                title: 'Excelerate-Art of Speaking',
+                date: '2025-08-29',
+                time: '10:00 AM',
+                location:'Seminar Hall(KPRCAS)',
+                image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1756053002/WhatsApp_Image_2025-08-24_at_20.52.42_78b8ef19_arjsxf.jpg',
+                description: 'Excelerate-Art of Speaking is an initiative to build a community.'
+              },
+              {
+                title: 'Mattaipandhu 2.0',
+                date: '2025-08-29',
+                location:'Karumathampatti',
+                image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1756053007/WhatsApp_Image_2025-08-24_at_20.52.43_ee2f8d61_o93jmw.jpg',
+                description: 'Mattaipandhu 2.0 is an initiative to build a community.'
+              },
+              {
+                title: 'வளமான கல்விக்காக-(Donation of Secondary books & guides',
+                date: '2025-08-30',
+                time:'03:00 PM',
+                location:'Arasur Govt School',
+                image:'https://res.cloudinary.com/drmwtmeg3/image/upload/v1756053014/WhatsApp_Image_2025-08-24_at_21.45.07_f2b2c24d_ldwk5w.jpg',
+                description: 'Books are the bridges that connects dream to reality-donate them'
               }
             ].map((event, index) => (
               <AnimationWrapper key={index} delay={index * 100} animation="fade-in">
