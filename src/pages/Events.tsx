@@ -88,7 +88,6 @@ const Events = () => {
           </AnimationWrapper>
         </div>
       </section>
-
       {/* Upcoming Events Section */}
       <section className="section-padding bg-gradient-to-br from-primary/10 to-secondary/20">
         <div className="container-custom">
@@ -107,21 +106,6 @@ const Events = () => {
                 title: 'RAC-a-THON',
                 image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755885523/WhatsApp_Image_2025-08-22_at_20.54.06_9c3cb13c_zhno2w.jpg',
                 description: 'RAC-a-THON is a 24-hour hackathon.'
-              },
-              {
-                title: 'Yours Lovingly',
-                date: '2025-08-24',
-                image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755885523/WhatsApp_Image_2025-08-22_at_20.54.05_8f591faf_dlqyvp.jpg',
-                time: '10:00 AM - 1:00 PM',
-                location: 'Uthavum Karangal,Avinashi',
-                description: 'Enhance the power of giving.'
-              },
-              {
-                title: 'Lingua Connection',
-                date: '2025-08-25',
-                platform: 'Gmeet',
-                image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755885523/WhatsApp_Image_2025-08-22_at_20.54.05_3b4f2292_yjzwwh.jpg',
-                description: 'Lingua Connection - A day of language exchange and learning.'
               },
               {
                 title: 'அன்பின் மறு உருவம்',
@@ -221,6 +205,87 @@ const Events = () => {
                       </div>
                     )}
                     <p className="text-muted-foreground mb-4 line-clamp-3">{event.description}</p>
+                  </CardHeader>
+                </Card>
+              </AnimationWrapper>
+            ))}
+          </div>
+        </div>
+      </section>
+{/* Past Events Section */}
+<section className="section-padding bg-white">
+        <div className="container-custom">
+          <AnimationWrapper>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Our <span className="text-primary">Past Events</span></h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Relive the memories of our successful past events and initiatives.
+              </p>
+            </div>
+          </AnimationWrapper>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                title: 'Yours Lovingly',
+                date: '2025-08-24',
+                time: '10:00 AM - 1:00 PM',
+                location: 'Uthavum Karangal,Avinashi',
+                image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755885523/WhatsApp_Image_2025-08-22_at_20.54.05_8f591faf_dlqyvp.jpg',
+                description: 'A Dream Mental support initiative'
+              },
+              {
+                title: 'Lingua Connection',
+                date: '2025-08-25',
+                time: '07:00 PM - 08:00 PM',
+                location: 'Gmeet',
+                image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755454347/photo-1517048676732-d65bc937f952_ildrq7.avif',
+                description: 'A platform for language exchange and cultural enrichment.'
+              }
+            ].map((event, index) => (
+              <AnimationWrapper key={`past-${index}`} delay={index * 100} animation="fade-in">
+                <Card className="h-full bg-white border-none shadow-soft hover-lift transition-all duration-300 overflow-hidden">
+                  {event.image && (
+                    <div className="relative h-48 w-full overflow-hidden">
+                      <button 
+                        onClick={() => setSelectedImage({ src: event.image, alt: event.title })}
+                        className="w-full h-full focus:outline-none"
+                      >
+                        <img
+                          src={event.image}
+                          alt={event.title}
+                          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105 cursor-zoom-in"
+                        />
+                      </button>
+                    </div>
+                  )}
+                  <CardHeader>
+                    <div className="flex justify-between items-start mb-2">
+                      <CardTitle className="text-xl">{event.title}</CardTitle>
+                      {event.date && (
+                        <div className="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full whitespace-nowrap">
+                          {new Date(event.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                        </div>
+                      )}
+                    </div>
+                    {event.time && (
+                      <div className="flex items-center text-sm text-muted-foreground mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        {event.time}
+                      </div>
+                    )}
+                    {event.location && (
+                      <div className="flex items-start text-sm text-muted-foreground mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1.5 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>{event.location}</span>
+                      </div>
+                    )}
+                    <p className="text-sm text-muted-foreground">{event.description}</p>
                   </CardHeader>
                 </Card>
               </AnimationWrapper>

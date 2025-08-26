@@ -6,7 +6,7 @@ import AnimationWrapper from '@/components/AnimationWrapper';
 
 const Gallery = () => {
   const [activeFilter, setActiveFilter] = useState('all');
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedItem, setSelectedItem] = useState<{src: string; type: string} | null>(null);
 
   const filters = [
     { id: 'all', label: 'All' },
@@ -21,21 +21,13 @@ const Gallery = () => {
     {
       id: 1,
       type: 'image',
-      src: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755327320/IMG_2688_vkdcns.jpg',
-      category: 'club service',
-      title: 'Mattai Pandhu',
-      description: 'Mattai Pandhu an initiative to build a community'
-    },
-    {
-      id: 2,
-      type: 'image',
       src: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755328575/IMG_2630_lfgtit.jpg',
       category: 'club service',
       title: 'Charter Day',
       description: 'Charter Day celebration "Purpose Power Progress"'
     },
     {
-      id: 3,
+      id: 2,
       type: 'image',
       src: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755328351/IMG_2449_fig2hu.jpg',
       category: 'club service',
@@ -43,7 +35,7 @@ const Gallery = () => {
       description: 'Swap and Serve an initiative to build a community'
     },
     {
-      id: 4,
+      id: 3,
       type: 'image',
       src: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755331800/IMG-20250727-WA0011_1_avnbqn.jpg',
       category: 'district priority projects',
@@ -51,7 +43,7 @@ const Gallery = () => {
       description: 'Serving with full hearted'
     },
     {
-      id: 5,
+      id: 4,
       type: 'image',
       src: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755417179/WhatsApp_Image_2025-07-20_at_19.16.57_99f3161a_xktitp.jpg',
       category: 'professional service',
@@ -59,7 +51,7 @@ const Gallery = () => {
       description: 'Skill up summit-Motivational session'
     },
     {
-      id: 6,
+      id: 5,
       type: 'image',
       src: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755417387/WhatsApp_Image_2025-07-21_at_23.31.20_ca301d31_yh4q7o.jpg',
       category: 'professional service',
@@ -67,12 +59,20 @@ const Gallery = () => {
       description: 'Income tax Insights'
     },
     {
-      id: 7,
+      id: 6,
       type: 'image',
       src: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755417519/IMG_2547_deej97.jpg',
       category: 'professional service',
       title: 'Checkmate-Challenge',
       description: 'Checkmate-Challenge'
+    },
+    {
+      id: 7,
+      type: 'image',
+      src: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755327320/IMG_2688_vkdcns.jpg',
+      category: 'club service',
+      title: 'Mattai Pandhu',
+      description: 'Mattai Pandhu an initiative to build a community'
     },
   ];
 
@@ -137,7 +137,7 @@ const Gallery = () => {
                 <AnimationWrapper key={item.id} delay={index * 100} animation="bounce-in">
                   <div 
                     className="relative group cursor-pointer overflow-hidden rounded-lg shadow-soft hover:shadow-medium transition-all duration-300 transform hover:-translate-y-2 hover-lift"
-                    onClick={() => setSelectedImage(item.src)}
+                    onClick={() => setSelectedItem({src: item.src, type: item.type})}
                   >
                     <div className="aspect-square overflow-hidden">
                       <img
@@ -178,21 +178,32 @@ const Gallery = () => {
       </section>
 
       {/* Lightbox Modal */}
-      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+      <Dialog open={!!selectedItem} onOpenChange={() => setSelectedItem(null)}>
         <DialogContent className="max-w-4xl max-h-[90vh] p-0 overflow-hidden">
           <div className="relative">
             <button
-              onClick={() => setSelectedImage(null)}
+              onClick={() => setSelectedItem(null)}
               className="absolute top-4 right-4 z-10 w-10 h-10 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-colors"
             >
               <X className="h-6 w-6" />
             </button>
-            {selectedImage && (
-              <img
-                src={selectedImage}
-                alt="Gallery item"
-                className="w-full h-auto max-h-[90vh] object-contain"
-              />
+            {selectedItem && (
+              <div className="w-full h-[80vh] flex items-center justify-center bg-black">
+                {selectedItem.type === 'video' ? (
+                  <video 
+                    src={selectedItem.src} 
+                    controls 
+                    autoPlay 
+                    className="w-full h-full object-contain"
+                  />
+                ) : (
+                  <img
+                    src={selectedItem.src}
+                    alt="Gallery item"
+                    className="w-full h-full object-contain"
+                  />
+                )}
+              </div>
             )}
           </div>
         </DialogContent>
