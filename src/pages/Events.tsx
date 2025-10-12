@@ -17,6 +17,24 @@ type EventType = {
 // ✅ Event list
 const events: EventType[] = [
   {
+    title: 'Yours Lovingly',
+    date: '2025-08-24',
+    time: '10:00 AM – 1:00 PM',
+    location: 'Uthavum Karangal, Avinashi',
+    platform: 'In-person',
+    image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755885523/WhatsApp_Image_2025-08-22_at_20.54.05_8f591faf_dlqyvp.jpg', 
+    description: 'A Dream Mental Support Initiative.'
+  },
+  {
+    title: 'Lingua Connection',
+    date: '2025-08-25',
+    time: '07:00 PM – 08:00 PM',
+    location: '',
+    platform: 'Gmeet',
+    image: 'https://res.cloudinary.com/drmwtmeg3/image/upload/v1755885523/WhatsApp_Image_2025-08-22_at_20.54.05_3b4f2292_yjzwwh.jpg',
+    description: 'A platform for language exchange and cultural enrichment.'
+  },
+  {
     title: 'அன்பின் மறு உருவம்',
     date: '2025-08-26',
     time: '10:00 AM - 1:00 PM',
