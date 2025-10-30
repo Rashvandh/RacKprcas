@@ -114,6 +114,14 @@ const Gallery = () => {
       title:'Navrang',
       description: 'Navrang is an event celebrating Navratri with vibrant traditions'
     },
+    {
+      id: 13,
+      type: 'image',
+      src: 'https://res.cloudinary.com/dmwvo0u6p/image/upload/v1761842489/IMG-20250927-WA0100_zlndtq.jpg',
+      category: 'club service',
+      title:'Rac-a-thon',
+      description: 'Rac-a-thon is a 24-hour hackathon event'
+    },
   ];
 
   const filteredItems = activeFilter === 'all' 
