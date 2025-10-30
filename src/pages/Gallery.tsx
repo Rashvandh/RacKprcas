@@ -74,6 +74,54 @@ const Gallery = () => {
       title: 'Mattai Pandhu',
       description: 'Mattai Pandhu an initiative to build a community'
     },
+    {
+      id: 8,
+      type: 'image',
+      src: 'https://res.cloudinary.com/dmwvo0u6p/image/upload/v1760281257/PHOTO-2025-09-28-09-55-14_wodjhp.jpg',
+      category: 'club service',
+      title: 'Tharagam',
+      description: 'The Rotaract Club of KPRCAS proudly celebrated Onam under Tharangam 3.0.'
+    },
+    {
+      id: 9,
+      type: 'image',
+      src: 'https://res.cloudinary.com/dmwvo0u6p/image/upload/v1761841757/IMG_20250831_141950_ymbxjs.jpg',
+      category: 'club service',
+      title: 'Shuffle and roll',
+      description: 'Shuffle and roll an initiative to build a community'
+    },
+    {
+      id: 10,
+      type: 'image',
+      src: 'https://res.cloudinary.com/dmwvo0u6p/image/upload/v1761841998/IMG_20250916_115541_rftji2.jpg',
+      category: 'club service',
+      title:'Verum pen illa',
+      description: 'Verum pen illa an initiative to empower the womens'
+    },
+    {
+      id: 11,
+      type: 'image',
+      src: 'https://res.cloudinary.com/dmwvo0u6p/image/upload/v1761842038/Screenshot_2025-09-29-22-04-09-91_6012fa4d4ddec268fc5c7112cbb265e7_o0kocj.jpg',
+      category: 'club service',
+      title:'Charity drive',
+      description: 'Charity drive an initiative to raise funds for the needy'
+    },
+    {
+      id: 12,
+      type: 'image',
+      src: 'https://res.cloudinary.com/dmwvo0u6p/image/upload/v1760283874/IMG_5440_any3nm.jpg',
+      category: 'club service',
+      title:'Navrang',
+      description: 'Navrang is an event celebrating Navratri with vibrant traditions'
+    },
+    {
+      id: 13,
+      type: 'image',
+      src: 'https://res.cloudinary.com/dmwvo0u6p/image/upload/v1761842489/IMG-20250927-WA0100_zlndtq.jpg',
+      category: 'club service',
+      title:'Rac-a-thon',
+      description: 'Rac-a-thon is a 24-hour hackathon event'
+    },
   ];
 
   const filteredItems = activeFilter === 'all' 
